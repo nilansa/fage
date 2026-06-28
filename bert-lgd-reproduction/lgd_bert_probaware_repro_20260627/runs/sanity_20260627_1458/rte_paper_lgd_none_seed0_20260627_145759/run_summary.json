@@ -1,0 +1,18 @@
+{
+  "error_message": null,
+  "final_eval": {
+    "epoch": 1.2692307692307692,
+    "eval/accuracy": 0.5703971119133574,
+    "eval/f1": 0.5182186234817814,
+    "eval/loss": 1.017838398902425,
+    "global_step": 100,
+    "paper_fig5/test_accuracy": 0.5703971119133574,
+    "paper_fig5/test_loss": 1.017838398902425,
+    "time/wall_clock_sec": 20.558394193649292
+  },
+  "model_state_hash": "c7a480c53f196b979a849493c8e1915c97a4bde9904e050933a3b5adea92c00b",
+  "refresh_count": 2,
+  "run_dir": "/home2/nilan/research/AN/scratch_exps/lgd_bert_probaware_repro_20260627/runs/sanity_20260627_1458/rte_paper_lgd_none_seed0_20260627_145759",
+  "status": "finished",
+  "wandb_url": "https://wandb.ai/nilansa/lgd_neurips2019_bert_repro/runs/fxknm936"
+}

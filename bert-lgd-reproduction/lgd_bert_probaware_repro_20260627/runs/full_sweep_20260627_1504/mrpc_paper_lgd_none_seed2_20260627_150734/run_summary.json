@@ -1,0 +1,18 @@
+{
+  "error_message": null,
+  "final_eval": {
+    "epoch": 2.991304347826087,
+    "eval/accuracy": 0.5882352941176471,
+    "eval/f1": 0.6528925619834711,
+    "eval/loss": 1.324441676046334,
+    "global_step": 345,
+    "paper_fig5/test_accuracy": 0.5882352941176471,
+    "paper_fig5/test_loss": 1.324441676046334,
+    "time/wall_clock_sec": 117.7306387424469
+  },
+  "model_state_hash": "ef704450b45f47556c6b5d716d32ff2ceaf0d028250e6be3736fec23ae3c2587",
+  "refresh_count": 3,
+  "run_dir": "/home2/nilan/research/AN/scratch_exps/lgd_bert_probaware_repro_20260627/runs/full_sweep_20260627_1504/mrpc_paper_lgd_none_seed2_20260627_150734",
+  "status": "finished",
+  "wandb_url": "https://wandb.ai/nilansa/lgd_neurips2019_bert_repro/runs/qalzkayk"
+}

@@ -1,0 +1,19 @@
+WANDB_URL=https://wandb.ai/nilansa/lgd_neurips2019_bert_repro/runs/d8zna3ke
+{
+  "error_message": null,
+  "final_eval": {
+    "epoch": 2.9871794871794872,
+    "eval/accuracy": 0.5451263537906137,
+    "eval/f1": 0.3,
+    "eval/loss": 1.4433014315388264,
+    "global_step": 234,
+    "paper_fig5/test_accuracy": 0.5451263537906137,
+    "paper_fig5/test_loss": 1.4433014315388264,
+    "time/wall_clock_sec": 73.97032809257507
+  },
+  "model_state_hash": "b753c09d9ec257236f29b42d21097ed8f47ab5554605d45bdaf4dc75d9746828",
+  "refresh_count": 3,
+  "run_dir": "/home2/nilan/research/AN/scratch_exps/lgd_bert_probaware_repro_20260627/runs/full_sweep_20260627_1504/rte_label_aware_lgd_none_seed1_20260627_151334",
+  "status": "finished",
+  "wandb_url": "https://wandb.ai/nilansa/lgd_neurips2019_bert_repro/runs/d8zna3ke"
+}

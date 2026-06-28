@@ -1,0 +1,4 @@
+epoch,train_size,steps_in_epoch,batch_size,draw_count,unique_seen_count,never_seen_count,never_seen_frac,repeated_sample_count,repeated_sample_frac,duplicate_draw_count,duplicate_draw_frac_of_draws,max_times_seen,task,variant,seed,fallback_draw_count,fallback_draw_frac
+0,2490,78,32,2496,1581,909,0.3650602409638554,650,0.26104417670682734,915,0.36658653846153844,6,rte,random,0,0,0.0
+1,2490,78,32,2496,1579,911,0.36586345381526103,660,0.26506024096385544,917,0.36738782051282054,6,rte,random,0,0,0.0
+2,2490,78,32,2496,1573,917,0.3682730923694779,649,0.2606425702811245,923,0.3697916666666667,7,rte,random,0,0,0.0

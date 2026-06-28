@@ -1,0 +1,59 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6166.73it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+classifier.bias                            | MISSING    | 
+classifier.weight                          | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home2/nilan/.netrc.
+wandb: Currently logged in as: nilansa to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.27.0
+wandb: Run data is saved locally in /ssd_scratch/nilan/wandb/runs/wandb/run-20260627_145557-tbnb9wi3
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run zesty-resonance-7
+wandb: ⭐️ View project at https://wandb.ai/nilansa/lgd_neurips2019_bert_repro
+wandb: 🚀 View run at https://wandb.ai/nilansa/lgd_neurips2019_bert_repro/runs/tbnb9wi3
+wandb: updating run metadata
+wandb: uploading output.log; uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 0-20, summary
+wandb: 
+wandb: Run history:
+wandb: correction/weight_clipped_frac ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          correction/weight_max ▇▇▇▇▇▇▇██▇▁▇▇▇▇▇▇█▇█
+wandb:         correction/weight_mean █▂▄▄▄▆▁▂▄▂▂▄█▂▂▂▆▃▁▃
+wandb:          correction/weight_min ▁▁▂▂▂▃▃▃▄▄▄▄▅▅▆▆▇▇██
+wandb:                          epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇███
+wandb:                  eval/accuracy ▁
+wandb:                        eval/f1 ▁
+wandb:                      eval/loss ▁
+wandb:                    global_step ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇███
+wandb:   lsh/initial_refresh_time_sec ▁
+wandb:                            +18 ...
+wandb: 
+wandb: Run summary:
+wandb: correction/weight_clipped_frac 0
+wandb:          correction/weight_max 0.12509
+wandb:         correction/weight_mean 0.06624
+wandb:          correction/weight_min 0.04565
+wandb:                          epoch 0.24359
+wandb:                  eval/accuracy 0.53069
+wandb:                        eval/f1 0.01515
+wandb:                      eval/loss 1.06749
+wandb:                    global_step 20
+wandb:   lsh/initial_refresh_time_sec 6.38658
+wandb:                            +18 ...
+wandb: 
+wandb: 🚀 View run zesty-resonance-7 at: https://wandb.ai/nilansa/lgd_neurips2019_bert_repro/runs/tbnb9wi3
+wandb: ⭐️ View project at: https://wandb.ai/nilansa/lgd_neurips2019_bert_repro
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /ssd_scratch/nilan/wandb/runs/wandb/run-20260627_145557-tbnb9wi3/logs

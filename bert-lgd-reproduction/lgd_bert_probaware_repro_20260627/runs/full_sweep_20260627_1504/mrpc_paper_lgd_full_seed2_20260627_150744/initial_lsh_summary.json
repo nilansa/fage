@@ -1,0 +1,8 @@
+{
+  "dim": 768,
+  "k": 7,
+  "nonempty_bucket_max": 2061,
+  "nonempty_bucket_mean": 103.03370786516854,
+  "nonempty_bucket_min": 1,
+  "table_count": 10
+}

@@ -1,0 +1,60 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5246.31it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     | 
+-------------------------------------------+------------+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED | 
+cls.seq_relationship.bias                  | UNEXPECTED | 
+cls.predictions.bias                       | UNEXPECTED | 
+cls.predictions.transform.dense.bias       | UNEXPECTED | 
+cls.predictions.transform.dense.weight     | UNEXPECTED | 
+cls.seq_relationship.weight                | UNEXPECTED | 
+classifier.weight                          | MISSING    | 
+classifier.bias                            | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home2/nilan/.netrc.
+wandb: Currently logged in as: nilansa to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run bslvfqwb
+wandb: Tracking run with wandb version 0.27.0
+wandb: Run data is saved locally in /ssd_scratch/nilan/wandb/runs/wandb/run-20260627_150510-bslvfqwb
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run jumping-shadow-23
+wandb: ⭐️ View project at https://wandb.ai/nilansa/lgd_neurips2019_bert_repro
+wandb: 🚀 View run at https://wandb.ai/nilansa/lgd_neurips2019_bert_repro/runs/bslvfqwb
+wandb: updating run metadata
+wandb: uploading config.yaml; uploading output.log; uploading wandb-summary.json
+wandb: uploading history steps 330-358, summary
+wandb: 
+wandb: Run history:
+wandb: correction/weight_clipped_frac ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:          correction/weight_max ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▇▂▂▂▂▂▂▂▂▆▇▇█▁▁▁▁▁▁▁▁
+wandb:         correction/weight_mean ▁▁▁▁▁▁▁▁▁▁▁▁▁▆▆▂▂▁▂▂▂▆▄▁▃█▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+wandb:          correction/weight_min █████████████████▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                          epoch ▁▁▁▁▂▂▂▂▃▃▃▃▃▄▄▄▄▄▄▄▅▅▅▅▆▆▆▆▆▆▆▆▆▆▇▇▇▇██
+wandb:                  eval/accuracy ▆▆▆▇▁▇▇▇██▇▅▆█
+wandb:                        eval/f1 ▇▇▇█▁█████▇▅▆▇
+wandb:                      eval/loss ▄█▅▇▃▁▁▂▂▁▁▂▂▃
+wandb:                    global_step ▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▃▄▄▄▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇██
+wandb:   lsh/initial_refresh_time_sec ▁
+wandb:                            +18 ...
+wandb: 
+wandb: Run summary:
+wandb: correction/weight_clipped_frac 0
+wandb:          correction/weight_max 1.5902
+wandb:         correction/weight_mean 0.47591
+wandb:          correction/weight_min 0.03914
+wandb:                          epoch 2.9913
+wandb:                  eval/accuracy 0.71814
+wandb:                        eval/f1 0.80138
+wandb:                      eval/loss 0.73467
+wandb:                    global_step 345
+wandb:   lsh/initial_refresh_time_sec 9.73807
+wandb:                            +18 ...
+wandb: 
+wandb: 🚀 View run jumping-shadow-23 at: https://wandb.ai/nilansa/lgd_neurips2019_bert_repro/runs/bslvfqwb
+wandb: ⭐️ View project at: https://wandb.ai/nilansa/lgd_neurips2019_bert_repro
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /ssd_scratch/nilan/wandb/runs/wandb/run-20260627_150510-bslvfqwb/logs

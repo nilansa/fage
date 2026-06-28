@@ -1,0 +1,20 @@
+{
+  "note": "GLUE test labels are unavailable through the standard dataset, so validation is logged as paper_fig5/test_*.",
+  "paper_expected_approx": {
+    "train": 2491,
+    "validation_or_test": 278
+  },
+  "source": "Hugging Face datasets: nyu-mll/glue/rte",
+  "task": "rte",
+  "testing_curve_split": "validation",
+  "train_label_counts": [
+    1249,
+    1241
+  ],
+  "train_size": 2490,
+  "validation_label_counts": [
+    146,
+    131
+  ],
+  "validation_size": 277
+}

@@ -1,0 +1,63 @@
+timestamp: 20260627_145315
+hostname: gnode073
+python: /ssd_scratch/nilan/.venvs/cisamp-py14-topk-lite/bin/python
+python_version: 3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]
+cpu_count: 40
+
+versions:
+  torch: 2.9.1+cu128
+  transformers: 5.8.1
+  datasets: 4.8.5
+  wandb: 0.27.0
+  numpy: 2.2.6
+
+## nvidia_smi
+Sat Jun 27 14:53:22 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.211.01             Driver Version: 570.211.01     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 2080 Ti     Off |   00000000:02:00.0 Off |                  N/A |
+| 38%   32C    P0             72W /  250W |       0MiB /  11264MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 2080 Ti     Off |   00000000:03:00.0 Off |                  N/A |
+| 40%   30C    P0             56W /  250W |       0MiB /  11264MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 3080 Ti     Off |   00000000:82:00.0 Off |                  N/A |
+| 41%   31C    P0             94W /  350W |       0MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA GeForce RTX 2080 Ti     Off |   00000000:83:00.0 Off |                  N/A |
+| 38%   31C    P0             73W /  250W |       0MiB /  11264MiB |      1%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+## nvidia_smi_query
+0, NVIDIA GeForce RTX 2080 Ti, 10823 MiB, 11264 MiB
+1, NVIDIA GeForce RTX 2080 Ti, 10823 MiB, 11264 MiB
+2, NVIDIA GeForce RTX 3080 Ti, 11921 MiB, 12288 MiB
+3, NVIDIA GeForce RTX 2080 Ti, 10823 MiB, 11264 MiB
+
+## free_h
+               total        used        free      shared  buff/cache   available
+Mem:           125Gi       4.5Gi        98Gi       2.0Mi        22Gi       120Gi
+Swap:          8.0Gi       0.0Ki       8.0Gi
+
+## df_h
+Filesystem                 Size  Used Avail Use% Mounted on
+172.16.0.3:/archive/home2   33T   24T  7.4T  77% /home2
+/dev/sdc1                  880G  165G  716G  19% /ssd_scratch
+

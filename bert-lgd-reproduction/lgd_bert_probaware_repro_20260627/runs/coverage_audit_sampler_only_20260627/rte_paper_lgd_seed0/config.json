@@ -1,0 +1,12 @@
+{
+  "audit_mode": "sampler_only_static_initial_query_no_backprop",
+  "batch_size": 32,
+  "epochs": 3,
+  "note": "This audits sampler coverage over a full 3-epoch draw schedule. It does not update BERT/classifier weights.",
+  "seed": 0,
+  "steps_per_epoch": 78,
+  "task": "rte",
+  "total_steps": 234,
+  "train_size": 2490,
+  "variant": "paper_lgd"
+}
