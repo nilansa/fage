@@ -1,0 +1,133 @@
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6906.58it/s]
+[transformers] [1mBertForSequenceClassification LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |
+-------------------------------------------+------------+-
+cls.predictions.transform.dense.weight     | UNEXPECTED |
+cls.seq_relationship.weight                | UNEXPECTED |
+cls.seq_relationship.bias                  | UNEXPECTED |
+cls.predictions.bias                       | UNEXPECTED |
+cls.predictions.transform.dense.bias       | UNEXPECTED |
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |
+classifier.bias                            | MISSING    |
+classifier.weight                          | MISSING    |
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from /home2/nilan/.netrc.
+wandb: Currently logged in as: nilansa to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run 3qf9upw9
+wandb: Tracking run with wandb version 0.27.0
+wandb: Run data is saved locally in /home2/nilan/research/AN/scratch_exps/bert_lgd_sherlock_sampling_improvement_20260701_1525/runs/MRPC_LA_K5_L50_BWoR_refreshEpoch_noCorr_seed0/wandb/wandb/run-20260701_153227-3qf9upw9
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run MRPC_LA_K5_L50_BWoR_refreshEpoch_noCorr_seed0
+wandb: ⭐️ View project at https://wandb.ai/nilansa/lgd_bert_sampling_improvement_mrpc
+wandb: 🚀 View run at https://wandb.ai/nilansa/lgd_bert_sampling_improvement_mrpc/runs/3qf9upw9
+WANDB_URL=https://wandb.ai/nilansa/lgd_bert_sampling_improvement_mrpc/runs/3qf9upw9
+wandb: updating run metadata
+wandb: uploading wandb-summary.json; uploading config.yaml
+wandb: uploading history steps 331-358, summary
+wandb:
+wandb: Run history:
+wandb:     correction/weight_clipped_frac ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:              correction/weight_max ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:             correction/weight_mean ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:              correction/weight_min ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                              epoch ▁▁▁▂▂▂▂▂▃▃▃▃▄▄▄▄▅▅▅▅▅▅▅▆▆▆▆▆▆▆▇▇▇▇▇█████
+wandb:                      eval/accuracy ▁▃▅▄▁▂▃▆▆▇▇▆██
+wandb:                            eval/f1 ▅▅▅▆▂▁▄▅▅▇▆▅█▇
+wandb:                          eval/loss ▄█▅█▄▄▃▃▃▂▂▄▁▂
+wandb:                        global_step ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇█
+wandb: lsh/bucket_assignment_changed_frac █▁
+wandb:                                +45 ...
+wandb:
+wandb: Run summary:
+wandb:     correction/weight_clipped_frac 0
+wandb:              correction/weight_max 1
+wandb:             correction/weight_mean 1
+wandb:              correction/weight_min 1
+wandb:                              epoch 2.9913
+wandb:                      eval/accuracy 0.78186
+wandb:                            eval/f1 0.83964
+wandb:                          eval/loss 0.52143
+wandb:                        global_step 345
+wandb: lsh/bucket_assignment_changed_frac 0.93218
+wandb:                                +45 ...
+wandb:
+wandb: 🚀 View run MRPC_LA_K5_L50_BWoR_refreshEpoch_noCorr_seed0 at: https://wandb.ai/nilansa/lgd_bert_sampling_improvement_mrpc/runs/3qf9upw9
+wandb: ⭐️ View project at: https://wandb.ai/nilansa/lgd_bert_sampling_improvement_mrpc
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: /home2/nilan/research/AN/scratch_exps/bert_lgd_sherlock_sampling_improvement_20260701_1525/runs/MRPC_LA_K5_L50_BWoR_refreshEpoch_noCorr_seed0/wandb/wandb/run-20260701_153227-3qf9upw9/logs
+{
+  "error_message": null,
+  "final_eval": {
+    "epoch": 2.991304347826087,
+    "eval/accuracy": 0.7818627450980392,
+    "eval/f1": 0.8396396396396396,
+    "eval/loss": 0.5214270703932818,
+    "global_step": 345,
+    "paper_fig5/test_accuracy": 0.7818627450980392,
+    "paper_fig5/test_loss": 0.5214270703932818,
+    "time/wall_clock_sec": 143.37725186347961
+  },
+  "model_state_hash": "0cb664c5ef66531fb2ed48ec23974f91d33daf9b0d0e8d1730c8837c36e5ca73",
+  "refresh_count": 3,
+  "run_dir": "/home2/nilan/research/AN/scratch_exps/bert_lgd_sherlock_sampling_improvement_20260701_1525/runs/MRPC_LA_K5_L50_BWoR_refreshEpoch_noCorr_seed0",
+  "sample_coverage_by_epoch": [
+    {
+      "batch_size": 32,
+      "draw_count": 3680,
+      "duplicate_draw_count": 2743,
+      "duplicate_draw_frac_of_draws": 0.7453804347826087,
+      "epoch": 0,
+      "max_times_seen": 90,
+      "never_seen_count": 2731,
+      "never_seen_frac": 0.7445474372955289,
+      "repeated_sample_count": 426,
+      "repeated_sample_frac": 0.11613958560523446,
+      "steps_in_epoch": 115,
+      "train_size": 3668,
+      "unique_seen_count": 937
+    },
+    {
+      "batch_size": 32,
+      "draw_count": 3680,
+      "duplicate_draw_count": 2363,
+      "duplicate_draw_frac_of_draws": 0.6421195652173913,
+      "epoch": 1,
+      "max_times_seen": 54,
+      "never_seen_count": 2351,
+      "never_seen_frac": 0.6409487459105779,
+      "repeated_sample_count": 726,
+      "repeated_sample_frac": 0.19792802617230099,
+      "steps_in_epoch": 115,
+      "train_size": 3668,
+      "unique_seen_count": 1317
+    },
+    {
+      "batch_size": 32,
+      "draw_count": 3680,
+      "duplicate_draw_count": 2454,
+      "duplicate_draw_frac_of_draws": 0.6668478260869565,
+      "epoch": 2,
+      "max_times_seen": 61,
+      "never_seen_count": 2442,
+      "never_seen_frac": 0.6657579062159215,
+      "repeated_sample_count": 707,
+      "repeated_sample_frac": 0.19274809160305342,
+      "steps_in_epoch": 115,
+      "train_size": 3668,
+      "unique_seen_count": 1226
+    }
+  ],
+  "sample_coverage_total": {
+    "coverage": 0.7033805888767721,
+    "draw_count": 11040,
+    "duplicate_draw_count": 8460,
+    "train_size": 3668,
+    "unique_seen_count": 2580
+  },
+  "status": "finished",
+  "wandb_url": "https://wandb.ai/nilansa/lgd_bert_sampling_improvement_mrpc/runs/3qf9upw9"
+}

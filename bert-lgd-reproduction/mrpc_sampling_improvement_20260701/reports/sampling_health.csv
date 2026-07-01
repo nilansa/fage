@@ -1,0 +1,6 @@
+run_name,K,coverage_after_training,mean_unique_samples_per_batch,mean_duplicate_samples_per_batch,mean_fallback_rate,mean_bucket_size,sampled_label1_ratio
+MRPC_random_epoch_shuffle_seed0,,1.0,31.895652173913042,0.0,0.0,3668.0,0.6744820065430752
+MRPC_LA_K3_L50_BWoR_refreshEpoch_noCorr_seed0,3,0.9149400218102508,32.0,0.0,0.0,547.0905797101449,0.5826086956521739
+MRPC_LA_K4_L50_BWoR_refreshEpoch_noCorr_seed0,4,0.8527808069792803,32.0,0.0,0.0,236.75498188405797,0.5808876811594202
+MRPC_LA_K5_L50_BWoR_refreshEpoch_noCorr_seed0,5,0.7033805888767721,32.0,0.0,0.0,97.69972826086956,0.49420289855072463
+MRPC_LA_K6_L50_BWoR_refreshEpoch_noCorr_seed0,6,0.5662486368593239,32.0,0.0,0.0,72.09972826086957,0.5179347826086956

@@ -1,0 +1,4 @@
+epoch,train_size,steps_in_epoch,batch_size,draw_count,unique_seen_count,never_seen_count,never_seen_frac,repeated_sample_count,repeated_sample_frac,duplicate_draw_count,duplicate_draw_frac_of_draws,max_times_seen
+0,3668,115,32,3668,3668,0,0.0,0,0.0,0,0.0,1
+1,3668,115,32,3668,3668,0,0.0,0,0.0,0,0.0,1
+2,3668,115,32,3668,3668,0,0.0,0,0.0,0,0.0,1

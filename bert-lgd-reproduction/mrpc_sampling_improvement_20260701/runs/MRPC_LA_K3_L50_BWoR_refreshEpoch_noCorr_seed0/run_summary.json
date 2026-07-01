@@ -1,0 +1,72 @@
+{
+  "error_message": null,
+  "final_eval": {
+    "epoch": 2.991304347826087,
+    "eval/accuracy": 0.8259803921568627,
+    "eval/f1": 0.8734402852049911,
+    "eval/loss": 0.4523230662532881,
+    "global_step": 345,
+    "paper_fig5/test_accuracy": 0.8259803921568627,
+    "paper_fig5/test_loss": 0.4523230662532881,
+    "time/wall_clock_sec": 136.6069691181183
+  },
+  "model_state_hash": "38c8b99412f0fc4b7c97b2e3d761e3967151b4731b697cf53a56fc2afa1f9637",
+  "refresh_count": 3,
+  "run_dir": "/home2/nilan/research/AN/scratch_exps/bert_lgd_sherlock_sampling_improvement_20260701_1525/runs/MRPC_LA_K3_L50_BWoR_refreshEpoch_noCorr_seed0",
+  "sample_coverage_by_epoch": [
+    {
+      "batch_size": 32,
+      "draw_count": 3680,
+      "duplicate_draw_count": 1785,
+      "duplicate_draw_frac_of_draws": 0.485054347826087,
+      "epoch": 0,
+      "max_times_seen": 72,
+      "never_seen_count": 1773,
+      "never_seen_frac": 0.48336968375136313,
+      "repeated_sample_count": 771,
+      "repeated_sample_frac": 0.21019629225736097,
+      "steps_in_epoch": 115,
+      "train_size": 3668,
+      "unique_seen_count": 1895
+    },
+    {
+      "batch_size": 32,
+      "draw_count": 3680,
+      "duplicate_draw_count": 1508,
+      "duplicate_draw_frac_of_draws": 0.4097826086956522,
+      "epoch": 1,
+      "max_times_seen": 8,
+      "never_seen_count": 1496,
+      "never_seen_frac": 0.4078516902944384,
+      "repeated_sample_count": 956,
+      "repeated_sample_frac": 0.2606324972737186,
+      "steps_in_epoch": 115,
+      "train_size": 3668,
+      "unique_seen_count": 2172
+    },
+    {
+      "batch_size": 32,
+      "draw_count": 3680,
+      "duplicate_draw_count": 1539,
+      "duplicate_draw_frac_of_draws": 0.4182065217391304,
+      "epoch": 2,
+      "max_times_seen": 9,
+      "never_seen_count": 1527,
+      "never_seen_frac": 0.4163031624863686,
+      "repeated_sample_count": 939,
+      "repeated_sample_frac": 0.2559978189749182,
+      "steps_in_epoch": 115,
+      "train_size": 3668,
+      "unique_seen_count": 2141
+    }
+  ],
+  "sample_coverage_total": {
+    "coverage": 0.9149400218102508,
+    "draw_count": 11040,
+    "duplicate_draw_count": 7684,
+    "train_size": 3668,
+    "unique_seen_count": 3356
+  },
+  "status": "finished",
+  "wandb_url": "https://wandb.ai/nilansa/lgd_bert_sampling_improvement_mrpc/runs/qngb9dsj"
+}
