@@ -1,0 +1,6 @@
+run_name,K,L,replacement_mode,correction,refresh_mode,final_eval_accuracy,final_eval_f1,final_eval_loss,best_eval_accuracy,best_eval_f1
+MRPC_random_epoch_shuffle_seed0,,,epoch_shuffle,none,every_epoch,0.8455882352941176,0.8923076923076924,0.5030339886160458,0.8627450980392157,0.9027777777777778
+MRPC_LA_K3_L50_BWoR_refreshEpoch_noCorr_seed0,3,50,batch_without_replacement,none,every_epoch,0.8259803921568627,0.8734402852049911,0.4523230662532881,0.8284313725490197,0.882943143812709
+MRPC_LA_K4_L50_BWoR_refreshEpoch_noCorr_seed0,4,50,batch_without_replacement,none,every_epoch,0.7941176470588235,0.8546712802768166,0.5244599113277361,0.7941176470588235,0.856175972927242
+MRPC_LA_K5_L50_BWoR_refreshEpoch_noCorr_seed0,5,50,batch_without_replacement,none,every_epoch,0.7818627450980392,0.8396396396396396,0.5214270703932818,0.7818627450980392,0.8538961038961039
+MRPC_LA_K6_L50_BWoR_refreshEpoch_noCorr_seed0,6,50,batch_without_replacement,none,every_epoch,0.821078431372549,0.8809135399673735,0.5614919919593662,0.821078431372549,0.8809135399673735
